@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body><center>
+	<table border="1">
+		<tr>
+			<td>stu-id</td>
+			<td>doubt</td>
+			<td>Date</td>
+			<td>time</td>
+		</tr>
+        {% for i in a %}
+		<tr>
+			<td>{{ i.student_id }}</td>
+			<td>{{ i.doubt }}</td>
+			<td>{{ i.date }}</td>
+			<td>{{ i.time }}</td>
+			<td><a href="/doubts/post_res/{{ i.doubt_id }}">response</a> </td>
+		</tr>
+            {% endfor %}
+	</table>
+</center>
+</body>
+</html>

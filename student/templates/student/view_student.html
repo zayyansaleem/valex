@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+		<h1></h1>
+		<table border="1">
+			<tr>
+				<td>Name</td>
+				<td>Age</td>
+				<td>Department</td>
+				<td>Phone Number</td>
+				<td>Email</td>
+				<td>Address</td>
+			</tr>
+            {% for i in x %}
+			<tr>
+				<td>{{ i.name }}</td>
+				<td>{{ i.age }}</td>
+				<td>{{ i.department }}</td>
+				<td>{{ i.phone }}</td>
+				<td>{{ i.email }}</td>
+				<td>{{ i.address }}</td>
+				
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+
+</body>
+</html>

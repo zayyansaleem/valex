@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body><center>
+	<table border="1">
+		<tr>
+			<td>name</td>
+			<td>user-name</td>
+			<td>department</td>
+			<td>experience</td>
+			<td>email</td>
+			<td>phone</td>
+			<td>psw</td>
+		</tr>
+        {% for i in x %}
+		<tr>
+			<td>{{ i.name }}</td>
+			<td>{{ i.username }}</td>
+			<td>{{i.department }}</td>
+			<td>{{ i.experience }}</td>
+			<td>{{ i.email }}</td>
+			<td>{{ i.phone_number }}</td>
+			<td>{{ i.password }}</td>
+			<td><a href="/examiner/update_examiner/{{ i.examiner_id }}">update</a> </td>
+		</tr>
+        {% endfor %}
+	</table>
+	<br>
+</center>
+</body>
+</html>

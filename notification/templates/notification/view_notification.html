@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body><center>
+	<table border="1">
+		<tr>
+		<td>notifacition</td>
+		<td>Date</td>
+		<td>time</td>
+		</tr>
+        {% for i in x %}
+		<tr>
+			<td>{{ i.notification }}</td>
+			<td>{{ i.date }}</td>
+			<td>{{ i.time }}</td>
+		</tr>
+        {% endfor %}
+	</table>
+</center>
+</body>
+</html>

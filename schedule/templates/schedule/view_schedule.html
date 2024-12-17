@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body><center>
+	<h1></h1>
+	<table border="1">
+		<tr>
+			<td>exam_name</td>
+			<td>exam_date</td>
+			<td>exam_time</td>
+		</tr>
+        {% for i in x %}
+		<tr>
+			<td>{{ i.exam_name }}</td>
+			<td>{{ i.exam_date }}</td>
+			<td>{{ i.exam_time }}</td>
+		</tr>
+        {% endfor %}
+		
+	</table>
+</center>
+
+</body>
+</html>

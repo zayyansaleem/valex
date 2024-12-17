@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+		<table border="1">
+			<tr>
+				<td>complaint</td>
+				<td>reply</td>
+			</tr>
+            {% for i in a %}
+			<tr>
+				<td>{{ i.complaint }}</td>
+				<td>{{ i.reply }}</td>
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+
+</body>
+</html>

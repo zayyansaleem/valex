@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+		<table border="1">
+			<tr>
+				<td>questionpaper</td>
+				<td>date</td>
+				<td>time</td>
+			</tr>
+            {% for i in x %}
+			<tr>
+				<td>{{ i.question_paper }}</td>
+				<td>{{ i.date }}</td>
+				<td>{{ i.time }}</td>
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+
+</body>
+</html>

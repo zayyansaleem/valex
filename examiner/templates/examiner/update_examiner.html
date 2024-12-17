@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+		<h1>REGISTER</h1>
+		<form method="post">
+            {% csrf_token %}
+			<table>
+                {% for i in x %}
+				<tr>
+					<td>NAME</td>
+					<td><input type="text" name="exname" value="{{ i.name }}"></td>
+				</tr>
+				<tr>
+					<td>USERNAME</td>
+					<td><input type="text" name="uname" value="{{ i.username }}"></td>
+				</tr>
+				<tr>
+					<td>PHONE</td>
+					<td><input type="text" name="phone" value="{{ i.phone_number }}"></td>
+				</tr>
+				<tr>
+					<td>EXPERIENCE</td>
+					<td><input type="text" name="exp" value="{{ i.experience }}"></td>
+				</tr>
+				<tr>
+					<td>EMAIL</td>
+					<td><input type= "email" name="email" value="{{ i.email }}"></td>
+				</tr>
+				<tr>
+					<td>PASSWORD</td>
+					<td><input type="password" name="psw" value="{{ i.password }}" ></td>
+				</tr>
+				<tr>
+
+				<tr>
+					<td></td>
+					<td><input type="submit" value="register"></td>
+				</tr>
+                {% endfor %}
+			</table>
+		</form>
+	</center>
+</body>
+</html>
