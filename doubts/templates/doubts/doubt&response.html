@@ -5,14 +5,14 @@
 <body><center>
 	<table border="1">
 		<tr>
-			<td>stu-id</td>
+			<td>student</td>
 			<td>doubt</td>
 			<td>Date</td>
 			<td>time</td>
 		</tr>
         {% for i in a %}
 		<tr>
-			<td>{{ i.student_id }}</td>
+			<td>{{ i.student.name}}</td>
 			<td>{{ i.doubt }}</td>
 			<td>{{ i.date }}</td>
 			<td>{{ i.time }}</td>

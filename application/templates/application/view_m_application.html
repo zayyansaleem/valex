@@ -8,19 +8,21 @@
 		<table border="1">
 			<tr>
 				<td>schedule_ID</td>
-				<td>student_ID</td>
+				<td>student</td>
 				<td>date</td>
 				<td>time</td>
 				<td>status</td>
 			</tr>
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+                {% for i in x %}
+				<td>{{ i.schedule.schedule_id }}</td>
+				<td>{{ i.student.name }}</td>
+				<td>{{ i.date }}</td>
+				<td>{{ i.time }}</td>
+				<td>{{ i.status }}</td>
 				<td><a href="">Approve</a></td>
 				<td><a href="">Reject</a></td>
+                {% endfor %}
 			</tr>
 		</table>
 		

@@ -8,15 +8,15 @@
 		<table border="1">
 			<tr>
 				<td>application_id</td>
-				<td>stu_id</td>
+				<td>student</td>
 				<td>marklist</td>
 				<td>date</td>
 				<td>time</td>
 			</tr>
              {% for i in x %}
 			<tr>
-				<td>{{ i.application_id }}</td>
-				<td>{{ i.student_id }}</td>
+				<td>{{ i.application.application_id }}</td>
+				<td>{{ i.student.name }}</td>
 				<td>{{ i.marklist }}</td>
 				<td>{{ i.date }}</td>
 				<td>{{ i.time }}</td>

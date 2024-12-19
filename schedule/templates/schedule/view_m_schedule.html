@@ -7,17 +7,19 @@
 	<center>
 		<table border="1">
 			<tr>
-				<td>exam_name</td>
-				<td>exam_date</td>
-				<td>exam_time</td>
+				<td>exam name</td>
+				<td>exam date</td>
+				<td>exam time</td>
 			</tr>
+            {% for i in x %}
 			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td>{{ i.exam_name }}</td>
+				<td>{{ i.exam_date }}</td>
+				<td>{{ i.exam_name }}</td>
 				<td><a href="">Update</a>
 				<td><a href="">Delete</a></td>
 			</tr>
+            {% endfor %}
 
 		</table>
 
